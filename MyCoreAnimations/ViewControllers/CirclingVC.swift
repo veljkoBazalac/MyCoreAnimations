@@ -44,7 +44,7 @@ class CirclingVC: UIViewController {
         let shapePath = UIBezierPath(arcCenter: view.center,
                                      radius: 100,
                                      startAngle: clockWise ? (-.pi/2) : (3.5 * .pi),
-                                     endAngle: clockWise ? (2 * .pi) : (-.pi/2),
+                                     endAngle: clockWise ? (2 * .pi) : (.pi),
                                      clockwise: clockWise)
         
         shapeLayer.path = shapePath.cgPath
@@ -57,13 +57,13 @@ class CirclingVC: UIViewController {
         
         // Animation
         let animation = CABasicAnimation(keyPath: "strokeEnd")
+        animation.fromValue = 0
         animation.toValue = 1
-        animation.duration = 2
+        animation.duration = 5
         animation.timingFunction = CAMediaTimingFunction(name: .linear)
         animation.fillMode = .forwards
         animation.isRemovedOnCompletion = true
         
         shapeLayer.add(animation, forKey: "circling")
     }
-
-}
+  }
