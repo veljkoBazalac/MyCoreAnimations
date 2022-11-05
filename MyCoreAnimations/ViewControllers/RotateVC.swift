@@ -39,8 +39,8 @@ class RotateVC: UIViewController {
     func animateRotate(toSide: CGFloat) {
         let animation = CABasicAnimation(keyPath: "transform.rotation.z") // Rotates over Z axis
         animation.fromValue = currentRotation
-        animation.toValue = toSide
-        animation.duration = 0.5
+        animation.toValue = currentRotation + toSide
+        animation.duration = 0.2
         currentRotation = toSide
         
         redView.layer.add(animation, forKey: "rotate")

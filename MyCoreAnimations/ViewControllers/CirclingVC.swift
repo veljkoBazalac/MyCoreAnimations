@@ -59,7 +59,7 @@ class CirclingVC: UIViewController {
         let animation = CABasicAnimation(keyPath: "strokeEnd")
         animation.fromValue = 0
         animation.toValue = 1
-        animation.duration = 5
+        animation.duration = 2
         animation.timingFunction = CAMediaTimingFunction(name: .linear)
         animation.fillMode = .forwards
         animation.isRemovedOnCompletion = true

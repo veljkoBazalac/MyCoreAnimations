@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GoT-Db-ERJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GoT-Db-ERJ">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -49,6 +49,7 @@
                         <segue destination="TsB-JG-ARF" kind="show" identifier="rotateSegue" id="DhI-Y2-0fW"/>
                         <segue destination="lhv-Hl-e3B" kind="show" identifier="shakeSegue" id="4DY-ae-167"/>
                         <segue destination="b4Q-Yi-DXb" kind="show" identifier="circlingSegue" id="jlm-7Q-l2l"/>
+                        <segue destination="jGV-gy-ojo" kind="show" identifier="slideSegue" id="zPY-PZ-i95"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -451,6 +452,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k6E-Og-Vtj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2474" y="1425"/>
+        </scene>
+        <!--Slide-->
+        <scene sceneID="gHa-Wl-cft">
+            <objects>
+                <viewController id="jGV-gy-ojo" customClass="SlideVC" customModule="MyCoreAnimations" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DxL-zI-hSX">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SLIDE LEFT AND RIGHT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJ2-yl-hjY">
+                                <rect key="frame" x="20" y="769" width="350" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <color key="textColor" systemColor="systemYellowColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8oh-R1-fQd"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="fJ2-yl-hjY" firstAttribute="leading" secondItem="8oh-R1-fQd" secondAttribute="leading" constant="20" id="QI4-B0-iFj"/>
+                            <constraint firstItem="8oh-R1-fQd" firstAttribute="trailing" secondItem="fJ2-yl-hjY" secondAttribute="trailing" constant="20" id="s0r-N4-LyW"/>
+                            <constraint firstItem="8oh-R1-fQd" firstAttribute="bottom" secondItem="fJ2-yl-hjY" secondAttribute="bottom" constant="20" id="vOv-Wo-fzQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Slide" id="TnF-w0-R4S"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eVu-ud-bSq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1060" y="1425"/>
         </scene>
     </scenes>
     <resources>

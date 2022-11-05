@@ -9,7 +9,7 @@ import UIKit
 
 class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    let animations : [String] = ["Move", "Scale", "Rotate", "Shake", "Circling"]
+    let animations : [String] = ["Move", "Scale", "Rotate", "Shake", "Circling", "Slide"]
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -33,6 +33,8 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         cell.accessoryType = .disclosureIndicator
         cell.backgroundColor = .clear
         cell.selectionStyle = .none
+        cell.separatorInset.right = 15
+        cell.separatorInset.left = 15
         
         return cell
     }
@@ -49,6 +51,8 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             performSegue(withIdentifier: "shakeSegue", sender: self)
         case 4:
             performSegue(withIdentifier: "circlingSegue", sender: self)
+        case 5:
+            performSegue(withIdentifier: "slideSegue", sender: self)
         default:
             performSegue(withIdentifier: "moveSegue", sender: self)
         }
