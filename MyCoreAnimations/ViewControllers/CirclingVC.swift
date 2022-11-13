@@ -22,7 +22,7 @@ class CirclingVC: UIViewController {
                                         clockwise: true)
         
         trackLayer.path = trackPath.cgPath
-        trackLayer.strokeColor = UIColor.lightGray.cgColor
+        trackLayer.strokeColor = UIColor.darkGray.cgColor
         trackLayer.lineWidth = 10
         trackLayer.fillColor = UIColor.clear.cgColor
         
@@ -48,7 +48,7 @@ class CirclingVC: UIViewController {
                                      clockwise: clockWise)
         
         shapeLayer.path = shapePath.cgPath
-        shapeLayer.strokeColor = UIColor.red.cgColor
+        shapeLayer.strokeColor = UIColor.yellow.cgColor
         shapeLayer.lineWidth = 10
         shapeLayer.fillColor = UIColor.clear.cgColor
         shapeLayer.lineCap = CAShapeLayerLineCap.round

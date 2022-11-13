@@ -3,7 +3,6 @@
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -20,6 +19,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="udg-zv-HVP">
                                 <rect key="frame" x="0.0" y="91" width="390" height="719"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="separatorColor" red="0.0" green="0.17071571720000001" blue="0.30183708970000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="gzS-42-ENE">
                                         <rect key="frame" x="0.0" y="50" width="390" height="43.666667938232422"/>
@@ -33,7 +33,7 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="udg-zv-HVP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="B5Q-Uz-Fpa"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="udg-zv-HVP" secondAttribute="trailing" id="We6-SL-HMW"/>
@@ -64,6 +64,11 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="0IH-qT-XDf">
                         <rect key="frame" x="0.0" y="47" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" systemColor="systemYellowColor"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                            <color key="textColor" systemColor="systemYellowColor"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -94,6 +99,7 @@
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="C09-Rh-X5A"/>
                                                     <constraint firstAttribute="height" constant="30" id="ydA-Qy-NN1"/>
                                                 </constraints>
+                                                <color key="tintColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="UP" cornerStyle="capsule">
                                                     <backgroundConfiguration key="background" strokeWidth="0.0">
@@ -115,7 +121,7 @@
                                                     <constraint firstAttribute="height" constant="30" id="IHa-aA-bNS"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="stR-KW-9ly"/>
                                                 </constraints>
-                                                <color key="tintColor" name="AccentColor"/>
+                                                <color key="tintColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="LEFT" cornerStyle="capsule">
                                                     <backgroundConfiguration key="background">
@@ -132,7 +138,7 @@
                                                     <constraint firstAttribute="height" constant="30" id="JUm-hY-Hmz"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="dXr-4A-dcv"/>
                                                 </constraints>
-                                                <color key="tintColor" name="AccentColor"/>
+                                                <color key="tintColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="RIGHT" cornerStyle="capsule">
                                                     <backgroundConfiguration key="background">
@@ -165,12 +171,13 @@
                                                 </connections>
                                             </button>
                                         </subviews>
+                                        <color key="tintColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </stackView>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qMQ-YJ-Qw6"/>
-                        <color key="backgroundColor" red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="qMQ-YJ-Qw6" firstAttribute="trailing" secondItem="KfI-ED-gCo" secondAttribute="trailing" constant="50" id="jb6-yk-tcv"/>
                             <constraint firstItem="qMQ-YJ-Qw6" firstAttribute="bottom" secondItem="KfI-ED-gCo" secondAttribute="bottom" constant="20" id="jyA-Br-Ea4"/>
@@ -215,6 +222,7 @@
                                                 </connections>
                                             </button>
                                         </subviews>
+                                        <color key="tintColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="tgi-E2-O3d">
                                         <rect key="frame" x="0.0" y="60" width="100" height="30"/>
@@ -237,12 +245,13 @@
                                                 </connections>
                                             </button>
                                         </subviews>
+                                        <color key="tintColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </stackView>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="JFz-yr-4zN"/>
-                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="JFz-yr-4zN" firstAttribute="bottom" secondItem="jsG-oX-a3g" secondAttribute="bottom" constant="20" id="ETX-Iq-X9h"/>
                             <constraint firstItem="jsG-oX-a3g" firstAttribute="centerX" secondItem="d6Q-jI-wLW" secondAttribute="centerX" id="mnL-1r-SjX"/>
@@ -271,7 +280,7 @@
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="6Nx-vK-CZg"/>
                                             <constraint firstAttribute="height" constant="30" id="wdG-Jr-ja6"/>
                                         </constraints>
-                                        <color key="tintColor" name="AccentColor"/>
+                                        <color key="tintColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="LEFT" cornerStyle="capsule">
                                             <backgroundConfiguration key="background">
@@ -289,7 +298,7 @@
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="euU-n1-ZDK"/>
                                             <constraint firstAttribute="height" constant="30" id="nbL-Q7-5xG"/>
                                         </constraints>
-                                        <color key="tintColor" name="AccentColor"/>
+                                        <color key="tintColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="RIGHT" cornerStyle="capsule">
                                             <backgroundConfiguration key="background">
@@ -305,7 +314,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="SU0-H0-jJK"/>
-                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="X0W-a9-M6D" firstAttribute="centerX" secondItem="vts-a9-1j4" secondAttribute="centerX" id="jhu-Pl-FZC"/>
                             <constraint firstItem="SU0-H0-jJK" firstAttribute="bottom" secondItem="X0W-a9-M6D" secondAttribute="bottom" constant="30" id="ngq-Dl-zxg"/>
@@ -337,6 +346,7 @@
                                                     <constraint firstAttribute="height" constant="30" id="VnT-2u-A24"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="jCW-dk-YYI"/>
                                                 </constraints>
+                                                <color key="tintColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="VERTICAL" cornerStyle="capsule">
                                                     <backgroundConfiguration key="background" strokeWidth="0.0">
@@ -359,6 +369,7 @@
                                                     <constraint firstAttribute="height" constant="30" id="GL6-GB-Nwo"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="JaP-us-jWr"/>
                                                 </constraints>
+                                                <color key="tintColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="HORIZONTAL" cornerStyle="capsule">
                                                     <backgroundConfiguration key="background" strokeWidth="0.0">
@@ -376,7 +387,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zEz-8f-4Fz"/>
-                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="HQT-tg-za9" firstAttribute="centerX" secondItem="l0h-sR-FgW" secondAttribute="centerX" id="3b2-gn-og3"/>
                             <constraint firstItem="zEz-8f-4Fz" firstAttribute="bottom" secondItem="HQT-tg-za9" secondAttribute="bottom" constant="20" id="BWP-Ae-1nZ"/>
@@ -405,7 +416,7 @@
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="PpI-09-7R2"/>
                                             <constraint firstAttribute="height" constant="30" id="fyX-xY-7Zp"/>
                                         </constraints>
-                                        <color key="tintColor" name="AccentColor"/>
+                                        <color key="tintColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="LEFT" cornerStyle="capsule">
                                             <backgroundConfiguration key="background">
@@ -424,7 +435,7 @@
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="Kyk-nq-Edt"/>
                                             <constraint firstAttribute="height" constant="30" id="d0A-Dw-IyN"/>
                                         </constraints>
-                                        <color key="tintColor" name="AccentColor"/>
+                                        <color key="tintColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="RIGHT" cornerStyle="capsule">
                                             <backgroundConfiguration key="background">
@@ -441,7 +452,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dOq-jD-ihV"/>
-                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="YrR-hy-0ev" firstAttribute="centerX" secondItem="uL9-No-le7" secondAttribute="centerX" id="iAo-Re-GOI"/>
                             <constraint firstItem="dOq-jD-ihV" firstAttribute="bottom" secondItem="YrR-hy-0ev" secondAttribute="bottom" constant="20" id="rd0-qh-gE5"/>
@@ -462,18 +473,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SLIDE LEFT AND RIGHT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJ2-yl-hjY">
-                                <rect key="frame" x="20" y="769" width="350" height="21"/>
+                                <rect key="frame" x="50" y="750" width="290" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="iPW-j1-V5w"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                 <color key="textColor" systemColor="systemYellowColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8oh-R1-fQd"/>
-                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="fJ2-yl-hjY" firstAttribute="leading" secondItem="8oh-R1-fQd" secondAttribute="leading" constant="20" id="QI4-B0-iFj"/>
-                            <constraint firstItem="8oh-R1-fQd" firstAttribute="trailing" secondItem="fJ2-yl-hjY" secondAttribute="trailing" constant="20" id="s0r-N4-LyW"/>
-                            <constraint firstItem="8oh-R1-fQd" firstAttribute="bottom" secondItem="fJ2-yl-hjY" secondAttribute="bottom" constant="20" id="vOv-Wo-fzQ"/>
+                            <constraint firstItem="fJ2-yl-hjY" firstAttribute="leading" secondItem="8oh-R1-fQd" secondAttribute="leading" constant="50" id="CBa-8f-QAl"/>
+                            <constraint firstItem="8oh-R1-fQd" firstAttribute="trailing" secondItem="fJ2-yl-hjY" secondAttribute="trailing" constant="50" id="CXl-Ev-Axq"/>
+                            <constraint firstItem="8oh-R1-fQd" firstAttribute="bottom" secondItem="fJ2-yl-hjY" secondAttribute="bottom" constant="20" id="wgk-ty-Ws8"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Slide" id="TnF-w0-R4S"/>
@@ -484,14 +498,8 @@
         </scene>
     </scenes>
     <resources>
-        <namedColor name="AccentColor">
-            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemTealColor">
-            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

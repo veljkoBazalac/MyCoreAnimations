@@ -9,20 +9,21 @@ import UIKit
 
 class RotateVC: UIViewController {
 
-    let redView = UIView()
+    let yellowView = UIView()
     let width : CGFloat = 50
     let height : CGFloat = 50
     var currentRotation : CGFloat = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        redView.backgroundColor = .systemRed
-        view.addSubview(redView)
+        yellowView.backgroundColor = .systemYellow
+        view.addSubview(yellowView)
+        yellowView.layer.cornerRadius = 10
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
-        redView.frame = CGRect(x: view.bounds.midX - width/2,
+        yellowView.frame = CGRect(x: view.bounds.midX - width/2,
                                y: view.bounds.midY * 0.8,
                                width: width,
                                height: height)
@@ -43,7 +44,7 @@ class RotateVC: UIViewController {
         animation.duration = 0.2
         currentRotation = toSide
         
-        redView.layer.add(animation, forKey: "rotate")
-        redView.layer.transform = CATransform3DMakeRotation(toSide, 0, 0, 1)
+        yellowView.layer.add(animation, forKey: "rotate")
+        yellowView.layer.transform = CATransform3DMakeRotation(toSide, 0, 0, 1)
     }
 }

@@ -22,11 +22,12 @@ class SlideVC: UIViewController {
         if let firstSlide = slidesArray.first {
             view.addSubview(firstSlide)
             
-            firstSlide.backgroundColor = .systemRed
+            firstSlide.backgroundColor = .systemYellow
             firstSlide.frame = CGRect(x: view.bounds.midX - width/2,
                                   y: view.bounds.midY - height/2,
                                   width: width,
                                   height: height)
+            firstSlide.layer.cornerRadius = 10
             
             let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(animateSlideLeft))
             swipeLeft.direction = .left
@@ -107,11 +108,12 @@ class SlideVC: UIViewController {
     // MARK: - Animate Slide View Appear
     private func appearAnimation(isLeft: Bool, for slide: UIView) {
         
-        slide.backgroundColor = .systemRed
+        slide.backgroundColor = .systemYellow
         slide.frame = CGRect(x: isLeft ? view.bounds.maxX + 50 : view.bounds.minX - 50 - width, // Change X position based on swipe direction
                              y: view.bounds.midY - height/2,
                              width: width,
                              height: height)
+        slide.layer.cornerRadius = 10
         
         view.addSubview(slide)
         

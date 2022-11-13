@@ -9,19 +9,20 @@ import UIKit
 
 class MoveVC: UIViewController {
 
-    let redView = UIView()
+    let yellowView = UIView()
     let width : CGFloat = 50
     let height : CGFloat = 50
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        redView.backgroundColor = .systemRed
-        view.addSubview(redView)
+        yellowView.backgroundColor = .systemYellow
+        view.addSubview(yellowView)
+        yellowView.layer.cornerRadius = 10
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
-        redView.frame = CGRect(x: view.bounds.midX - width/2,
+        yellowView.frame = CGRect(x: view.bounds.midX - width/2,
                                y: view.bounds.midY * 0.8,
                                width: width,
                                height: height)
@@ -29,18 +30,18 @@ class MoveVC: UIViewController {
     
     @IBAction func upButtonPressed(_ sender: UIButton) {
         animateMove(end: CGPoint(x: view.bounds.midX,
-                                 y: 80 + height/2))
+                                 y: 100 + height/2))
     }
     
     @IBAction func leftButtonPressed(_ sender: UIButton) {
         animateMove(end: CGPoint(x: view.bounds.minX + width/2,
-                                 y: view.bounds.midY * 0.8))
+                                 y: (view.bounds.midY * 0.8) + height/2))
     }
     
     
     @IBAction func rightButtonPressed(_ sender: UIButton) {
         animateMove(end: CGPoint(x: view.bounds.maxX - width/2,
-                                 y: view.bounds.midY * 0.8))
+                                 y: (view.bounds.midY * 0.8) + height/2))
     }
     
     
@@ -53,12 +54,12 @@ class MoveVC: UIViewController {
     // MARK: - Animate Move Function
     func animateMove(end: CGPoint) {
         let animation = CABasicAnimation(keyPath: "position")
-        animation.fromValue = redView.layer.position
+        animation.fromValue = yellowView.layer.position
         animation.toValue = end
         animation.duration = 0.5
 
-        redView.layer.add(animation, forKey: "move")
-        redView.layer.position = end // Allows animation to stay in the last position
+        yellowView.layer.add(animation, forKey: "move")
+        yellowView.layer.position = end // Allows animation to stay in the last position
         /*
          View have 2 layers:
          Model - layer which is in the position where View is created

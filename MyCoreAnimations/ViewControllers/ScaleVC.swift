@@ -9,20 +9,21 @@ import UIKit
 
 class ScaleVC: UIViewController {
 
-    let redView = UIView()
+    let yellowView = UIView()
     let width : CGFloat = 50
     let height : CGFloat = 50
     var currentScale : CGFloat = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        redView.backgroundColor = .systemRed
-        view.addSubview(redView)
+        yellowView.backgroundColor = .systemYellow
+        view.addSubview(yellowView)
+        yellowView.layer.cornerRadius = 10
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
-        redView.frame = CGRect(x: view.bounds.midX - width/2,
+        yellowView.frame = CGRect(x: view.bounds.midX - width/2,
                                y: view.bounds.midY * 0.8,
                                width: width,
                                height: height)
@@ -45,8 +46,8 @@ class ScaleVC: UIViewController {
         animation.duration = 0.5
         currentScale = scaleTo
         
-        redView.layer.add(animation, forKey: "scale")
-        redView.layer.transform = CATransform3DMakeScale(scaleTo, scaleTo, 1) // X, Y, Z changes based on animation.toValue
+        yellowView.layer.add(animation, forKey: "scale")
+        yellowView.layer.transform = CATransform3DMakeScale(scaleTo, scaleTo, 1) // X, Y, Z changes based on animation.toValue
     }
 
 }
